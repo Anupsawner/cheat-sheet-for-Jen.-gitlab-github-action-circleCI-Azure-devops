@@ -237,4 +237,4 @@ Let’s say you have a **Node.js web app**. Here’s how each tool handles CI/CD
 ✅ This sheet is designed for **instant understanding + real-world context** 📘
 # 🚀 CI/CD Tools Cheat Sheet
 
-![CI/CD Tools Comparison](./assets/cicd-tools.png)
+![CI/CD Tools Comparison](https://ibb.co/Y4HmPBvk)
