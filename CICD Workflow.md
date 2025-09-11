@@ -7,6 +7,115 @@ This is for those who thought they instantly learn all the things what is needed
 
 A one-stop **visual guide** to understand Jenkins, GitHub Actions, CircleCI, and Azure DevOps.
 
+# 🚀 CI/CD Tools Comparison Cheat Sheet
+
+## 🔧 Overview
+
+| Jenkins | GitHub Actions | CircleCI | Azure DevOps |
+|---------|----------------|----------|--------------|
+| ![Jenkins](https://www.jenkins.io/images/logos/jenkins/jenkins.png) <br> Open-source automation server | ![GitHub Actions](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) <br> Integrated CI/CD service by GitHub | ![CircleCI](https://circleci.com/favicon.ico) <br> Cloud-based CI/CD platform | ![Azure DevOps](https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png) <br> Microsoft's CI/CD service |
+
+---
+
+## 📜 Pipeline Configurations
+
+| Jenkins | GitHub Actions | CircleCI | Azure DevOps |
+|---------|----------------|----------|--------------|
+| ```groovy<br>pipeline {<br>  stages { }<br>}<br>``` | ```yaml<br>name: CI<br>on:<br>  push:<br>    branches:<br>      - main<br>jobs:<br>  build:<br>    runs-on: ubuntu-latest<br>    steps:<br>      - run: npm install<br>``` | ```yaml<br>version: 2.1<br>jobs:<br>  build:<br>    steps:<br>      - checkout<br>      - run: npm install<br>      - run: npm test<br>``` | ```yaml<br>trigger:<br>  - main<br>pool:<br>  vmImage: 'ubuntu-latest'<br>steps:<br>  - script: npm install<br>  - script: npm test<br>``` |
+
+---
+
+## 🔄 Workflow Examples (ASCII Visuals)
+
+### 🟢 Jenkins
+
+
+[ Code Commit ]
+│
+▼
+[ Build ]
+│
+▼
+[ Test ]
+│
+▼
+[ Deploy ]
+│
+▼
+[ AWS ]
+
+---
+
+### 🔵 GitHub Actions
+
+[ Code Commit / Push ]
+│
+▼
+[ Workflow Trigger ]
+│
+▼
+[ Run Tests ]
+│
+▼
+[ Deploy ]
+│
+▼
+[ AWS ]
+
+
+---
+
+### 🟠 CircleCI
+
+[ Node.js App ]
+│
+▼
+[ Build ]
+│
+▼
+[ Test ]
+│
+▼
+[ Deploy ]
+│
+▼
+[ AWS ]
+
+
+---
+
+### 🟣 Azure DevOps
+
+[ Node.js App ]
+│
+▼
+[ Build ]
+│
+▼
+[ Docker Image ]
+│
+▼
+[ Deploy ]
+│
+▼
+[ AWS ]
+
+
+---
+
+## ✅ Summary Table
+
+| Tool            | Trigger                     | Config File               | Where Jobs Run               | Pipeline Type                     |
+|-----------------|-----------------------------|---------------------------|------------------------------|-----------------------------------|
+| Jenkins         | Webhook / Poll SCM          | `Jenkinsfile` (Groovy)    | Jenkins agents (self-hosted) | Stages (Build, Test, Deploy)      |
+| GitHub Actions  | Push, PR, schedule, manual  | `.github/workflows/*.yml` | GitHub-hosted runners        | Jobs + Steps (YAML)               |
+| CircleCI        | Push to GitHub/Bitbucket    | `.circleci/config.yml`    | Docker/VM environments       | Jobs + Workflows                  |
+| Azure DevOps    | Push, PR, schedule, manual  | `azure-pipelines.yml`     | Microsoft/Self-hosted agents | Build Pipeline + Release Pipeline |
+
+---
+
+✅ This cheat sheet now has **configs, workflows, ASCII diagrams, and a summary table** for instant understanding.
+
 ---
 
 ## 📌 1. Jenkins
@@ -237,4 +346,5 @@ Let’s say you have a **Node.js web app**. Here’s how each tool handles CI/CD
 ✅ This sheet is designed for **instant understanding + real-world context** 📘
 # 🚀 CI/CD Tools Cheat Sheet
 
-![CI/CD Tools Comparison](https://ibb.co/Y4HmPBvk)
+
+# 🚀 CI/CD Tools Comparison Cheat Sheet
