@@ -275,7 +275,7 @@ steps:
 |---------------|---------------------|----------------------|---------------------|--------------------------|
 | Hosting       | Self-hosted         | GitHub Cloud         | Cloud / Self-hosted | Cloud + On-premises      |
 | Config Format | Groovy (Jenkinsfile)| YAML                 | YAML                | YAML / Classic GUI       |
-| Ease of Use   | ⚡ Medium          | ⚡⚡ Very Easy      |⚡⚡ Easy            | ⚡ Medium               |
+| Ease of Use   | ⚡ Medium           | ⚡⚡⚡ Very Easy    |⚡⚡ Easy          | ⚡ Medium               |
 | Best For      | Custom setups       | GitHub projects      | Dockerized builds   | Enterprise DevOps        |
 
 ---
