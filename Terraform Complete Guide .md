@@ -67,14 +67,16 @@ terraform-project/
 
 │
 ├── 📂 modules/ # Reusable modules
-
-│ ├── 📂 ec2/
-│ │ ├── 📜 main.tf
+│
+├── 📂 ec2/
+│ │
+├── 📜 main.tf
 │ │ ├── 📜 variables.tf
 │ │ └── 📜 outputs.tf
 
 │ └── 📂 s3/
-│ ├── 📜 main.tf
+│ 
+├── 📜 main.tf
 │ ├── 📜 variables.tf
 │ └── 📜 outputs.tf
 
