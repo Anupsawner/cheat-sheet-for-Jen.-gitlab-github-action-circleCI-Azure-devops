@@ -38,7 +38,7 @@ with examples of **EC2 & S3 modules**, visual diagrams, and real usage.
 
 ## 🏗️ Visual Workflow (Diagram)
 
-```
+```mermaid
 flowchart LR
     A["👨‍💻 Developer pushes code <br> to GitHub"] --> B["⚙️ GitHub Actions <br> runs Terraform"]
     B --> C["🛠️ Terraform <br> uses AWS Provider"]
@@ -276,7 +276,7 @@ bucket_name   = "my-terraform-demo-bucket-123"
 
 ```
 🏗️ Visual Architecture Diagram 
-
+ mermaid
 graph TD;
     A[Terraform Code 📝] --> B[Terraform CLI 🚀];
     B --> C[AWS Provider ☁️];
