@@ -288,27 +288,27 @@ graph TD;
 ▶️ Usage
 
 Initialize Terraform
-
+```
 terraform init
-
+```
 Validate configuration
-
+```
 terraform validate
-
+```
 Plan the changes
-
+```
 terraform plan -var-file="terraform.tfvars"
 
-
+```
 Apply the configuration
-
+```
 terraform apply -var-file="terraform.tfvars" -auto-approve
-
+```
 
 Check Outputs
-
+```
 terraform output
-
+```
 📤 Example Output
 
 EC2 Instance Public IP 🌍
