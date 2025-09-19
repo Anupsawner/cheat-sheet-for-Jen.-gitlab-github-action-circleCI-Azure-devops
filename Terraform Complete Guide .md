@@ -329,6 +329,7 @@ It builds both EC2 and S3 using separate modules.
 
 You can run Terraform automatically with GitHub Actions 🚀
 
+```
 name: Terraform CI/CD
 
 on:
@@ -355,5 +356,5 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -var-file="terraform.tfvars" -auto-approve
 
-
+```
 ✅ Now when you push changes → GitHub builds infra for you 🎉
