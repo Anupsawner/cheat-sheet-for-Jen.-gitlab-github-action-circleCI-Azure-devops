@@ -54,26 +54,36 @@ flowchart LR
 terraform-project/
 │
 ├── 📜 main.tf # Main infra code
+
 ├── 📜 variables.tf # Input variables
+
 ├── 📜 outputs.tf # Outputs
+
 ├── 📜 provider.tf # Provider config
+
 ├── 📜 versions.tf # Terraform + provider versions
+
 ├── 📜 terraform.tfvars # Default variable values
+
 │
 ├── 📂 modules/ # Reusable modules
+
 │ ├── 📂 ec2/
 │ │ ├── 📜 main.tf
 │ │ ├── 📜 variables.tf
 │ │ └── 📜 outputs.tf
+
 │ └── 📂 s3/
 │ ├── 📜 main.tf
 │ ├── 📜 variables.tf
 │ └── 📜 outputs.tf
+
 │
 ├── 📂 env/
 │ ├── 🟢 dev.tfvars
 │ ├── 🟡 staging.tfvars
 │ └── 🔴 prod.tfvars
+
 │
 └── 📂 .terraform/
 ├── 📜 terraform.tfstate
