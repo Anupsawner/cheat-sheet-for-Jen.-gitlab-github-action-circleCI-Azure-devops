@@ -275,26 +275,14 @@ key_name      = "my-keypair"
 bucket_name   = "my-terraform-demo-bucket-123"
 
 ```
-🏗️ Architecture Diagram
+🏗️ Visual Architecture Diagram 
 
-Here’s how Terraform provisions resources:      +----------------------+
-      |   Terraform CLI      |
-      +----------+-----------+
-                 |
-                 v
-       +---------+---------+
-       |   AWS Provider    |
-       +---------+---------+
-                 |
-   +-------------+-------------+
-   |                           |
-   v                           v
-+--------+              +---------------+
-|  EC2   |              |     S3        |
-|Instance|              |   Bucket      |
-+--------+              +---------------+
-   |                           |
-   |--> Public IP              |--> Bucket ARN
+graph TD;
+    A[Terraform Code 📝] --> B[Terraform CLI 🚀];
+    B --> C[AWS Provider ☁️];
+    C --> D[EC2 Instance 💻];
+    C --> E[S3 Bucket 📦];
+
 
 ▶️ Usage
 
