@@ -1,76 +1,34 @@
-# 🚀 Terraform AWS Project – EC2 + S3 Modules
+# 🧩 Core Tools & Workflow
 
-![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)
-![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?logo=amazonaws&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
+## 🔑 Tools We Use
 
-> 🎯 This repo is for **visual learners** who want to master **Terraform on AWS**.  
-> If you don’t like boring study 📖 → Don’t worry, this guide is **100% visual & practical** 😎  
+| Terraform | AWS EC2 | AWS S3 | GitHub Actions |
+|-----------|---------|--------|----------------|
+| ![Terraform](https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg) <br> **Infrastructure as Code (IaC)** – Automates AWS infra with reusable modules | ![EC2](https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/Compute/Amazon-EC2_64.svg) <br> **Elastic Compute Cloud** – Virtual servers to host applications | ![S3](https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/Storage/Amazon-Simple-Storage-Service-S3_Bucket_64.svg) <br> **Simple Storage Service** – Object storage for files, state, and backups | ![GitHub Actions](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) <br> **CI/CD Engine** – Automates Terraform runs on every commit |
 
 ---
 
-## 🖼️ Big Picture (What Happens Here)
+## ⚙️ Step-by-Step Flow
 
-Terraform → Talks to AWS → Builds **EC2 Instance** 🖥️ + **S3 Bucket** 📦
-
-+-------------------+
-| Terraform CLI | 🛠️
-+-------------------+
-|
-v
-+-------------------+
-| AWS Provider | ☁️
-+-------------------+
-| |
-v v
-+------+ +--------+
-| EC2 | | S3 |
-| 🖥️ | | 📦 |
-+------+ +--------+
-
-
-✅ At the end → Terraform gives you  
-- 🌍 **EC2 Public IP**  
-- 🔑 **S3 Bucket ARN**  
+| Step | Tool | What Happens |
+|------|------|--------------|
+| 1️⃣ | ![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) **GitHub Repo** | Stores Terraform code & tracks changes |
+| 2️⃣ | ![GitHub Actions](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) **GitHub Actions** | Runs Terraform plan/apply automatically |
+| 3️⃣ | ![Terraform](https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg) **Terraform** | Talks to AWS Provider (API) |
+| 4️⃣ | ![EC2](https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/Compute/Amazon-EC2_64.svg) **EC2 Instance** | Creates VM with Public IP |
+| 5️⃣ | ![S3](https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/Storage/Amazon-Simple-Storage-Service-S3_Bucket_64.svg) **S3 Bucket** | Creates bucket for storage & Terraform state |
 
 ---
 
-## 🌍 Project Structure
+## 🏗️ Visual Workflow (Diagram)
 
-```bash
-terraform-project/
-│
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── provider.tf
-├── versions.tf
-├── terraform.tfvars
-│
-├── modules/
-│   ├── ec2/        # EC2 module
-│   └── s3/         # S3 module
-│
-├── env/
-│   ├── dev.tfvars
-│   ├── staging.tfvars
-│   └── prod.tfvars
-│
-└── .terraform/     # Terraform’s memory
+```mermaid
+flowchart LR
+    A["👨‍💻 Developer pushes code <br> to GitHub"] --> B["⚙️ GitHub Actions <br> runs Terraform"]
+    B --> C["🛠️ Terraform <br> uses AWS Provider"]
+    C --> D["🖥️ AWS EC2 <br> Virtual Server"]
+    C --> E["📦 AWS S3 <br> Storage Bucket"]
 
-🏗️ Architecture Diagram
-graph TD
-    A[Terraform CLI 🛠️] --> B[AWS Provider ☁️]
-    B --> C[EC2 Instance 🖥️]
-    B --> D[S3 Bucket 📦]
-    C --> E[Public IP 🌍]
-    D --> F[Bucket ARN 🔑]
+    D --> F["🌍 Public IP Output"]
+    E --> G["🔑 Bucket ARN Output"]
 
-🧩 Modules = Lego Blocks
-
-🧱 EC2 Module → Builds instance
-
-🧱 S3 Module → Builds bucket
-
-🧩 Together → Full infra setup
