@@ -313,7 +313,7 @@ terraform output
 
 EC2 Instance Public IP 🌍
 
-S3 Bucket ARN 🔑
+S3 Bucket ARN (Amazon Resource Name) 🔑
 
 🧹 Cleanup
 
