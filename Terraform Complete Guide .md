@@ -17,11 +17,12 @@
 
 | Step | Tool | What Happens |
 |------|------|--------------|
-| 1️⃣ | ![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) **GitHub Repo** | Stores Terraform code & tracks changes |
-| 2️⃣ | ![GitHub Actions](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) **GitHub Actions** | Runs Terraform plan/apply automatically |
-| 3️⃣ | ![Terraform](https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg) **Terraform** | Talks to AWS Provider (API) |
-| 4️⃣ | <img src="./assets/ec2.svg" alt="EC2" width="40"><br>**EC2 Instance** | Creates VM with Public IP |
-| 5️⃣ | <img src="./assets/s3.svg" alt="S3" width="40"><br>**S3 Bucket** | Creates bucket for storage & Terraform state |
+| 1️⃣ | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="40"><br>**GitHub Repo** | Stores Terraform code & tracks changes |
+| 2️⃣ | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Actions" width="40"><br>**GitHub Actions** | Runs Terraform plan/apply automatically |
+| 3️⃣ | <img src="https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg" alt="Terraform" width="40"><br>**Terraform** | Talks to AWS Provider (API) |
+| 4️⃣ | <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg" alt="EC2" width="40"><br>**EC2 Instance** | Creates VM with Public IP |
+| 5️⃣ | <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AWS_Simple_Icons_Storage_Amazon_S3.svg" alt="S3" width="40"><br>**S3 Bucket** | Creates bucket for storage & Terraform state |
+
 
 
 ---
