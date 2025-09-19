@@ -20,8 +20,9 @@
 | 1️⃣ | ![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) **GitHub Repo** | Stores Terraform code & tracks changes |
 | 2️⃣ | ![GitHub Actions](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png) **GitHub Actions** | Runs Terraform plan/apply automatically |
 | 3️⃣ | ![Terraform](https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg) **Terraform** | Talks to AWS Provider (API) |
-| 4️⃣ | ![EC2](https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/Compute/Amazon-EC2_64.svg) **EC2 Instance** | Creates VM with Public IP |
-| 5️⃣ | ![S3](https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/dist/Storage/Amazon-Simple-Storage-Service-S3_Bucket_64.svg) **S3 Bucket** | Creates bucket for storage & Terraform state |
+| 4️⃣ | <img src="./assets/ec2.svg" alt="EC2" width="40"><br>**EC2 Instance** | Creates VM with Public IP |
+| 5️⃣ | <img src="./assets/s3.svg" alt="S3" width="40"><br>**S3 Bucket** | Creates bucket for storage & Terraform state |
+
 
 ---
 
