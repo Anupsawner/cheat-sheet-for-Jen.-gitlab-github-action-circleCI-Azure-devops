@@ -276,14 +276,15 @@ bucket_name   = "my-terraform-demo-bucket-123"
 
 ```
 🏗️ Visual Architecture Diagram 
- mermaid
+
+ ```mermaid
 graph TD;
     A[Terraform Code 📝] --> B[Terraform CLI 🚀];
     B --> C[AWS Provider ☁️];
     C --> D[EC2 Instance 💻];
     C --> E[S3 Bucket 📦];
 
-
+```
 ▶️ Usage
 
 Initialize Terraform
