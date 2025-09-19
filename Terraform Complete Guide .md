@@ -17,7 +17,7 @@ with examples of **EC2 & S3 modules**, visual diagrams, and real usage.
 
 | Terraform | AWS EC2 | AWS S3 | GitHub Actions |
 |-----------|---------|--------|----------------|
-| <img src="https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg" alt="Terraform" width="64"><br>**Terraform**<br><small>Infrastructure as Code (IaC)</small> | <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg" alt="EC2" width="64"><br>**EC2**<br><small>Virtual servers (compute)</small> | <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AWS_Simple_Icons_Storage_Amazon_S3.svg" alt="S3" width="64"><br>**S3**<br><small>Object storage</small> | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Actions" width="64"><br>**GitHub Actions**<br><small>CI/CD automation</small> |
+| <img src="https://www.datocms-assets.com/2885/1620155116-brandhcterraformverticalcolor.svg" alt="Terraform" width="128"><br>**Terraform**<br><small>Infrastructure as Code (IaC)</small> | <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg" alt="EC2" width="128"><br>**EC2**<br><small>Virtual servers (compute)</small> | <img src="https://commons.wikimedia.org/wiki/Special:FilePath/AWS_Simple_Icons_Storage_Amazon_S3.svg" alt="S3" width="128"><br>**S3**<br><small>Object storage</small> | <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Actions" width="128"><br>**GitHub Actions**<br><small>CI/CD automation</small> |
 
 
 ---
