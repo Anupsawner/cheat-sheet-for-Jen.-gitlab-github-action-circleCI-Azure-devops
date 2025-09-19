@@ -38,7 +38,7 @@ with examples of **EC2 & S3 modules**, visual diagrams, and real usage.
 
 ## 🏗️ Visual Workflow (Diagram)
 
-```mermaid
+```
 flowchart LR
     A["👨‍💻 Developer pushes code <br> to GitHub"] --> B["⚙️ GitHub Actions <br> runs Terraform"]
     B --> C["🛠️ Terraform <br> uses AWS Provider"]
