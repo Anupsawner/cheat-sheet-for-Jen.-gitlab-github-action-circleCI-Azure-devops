@@ -1,5 +1,8 @@
+# Karpenter in Kubernetes – Architecture Flow
+
+```text
                  ┌───────────────────────────────┐
-                 │  |      Helm Charts       │
+                 │   Git Repo / Helm Charts       │
                  └───────────┬───────────────────┘
                              │
                              ▼
@@ -10,7 +13,7 @@
            ┌──────────────────┼──────────────────┐
            ▼                  ▼                  ▼
    ┌─────────────┐    ┌──────────────┐   ┌─────────────────┐
-   │ Controller  │    │  Scheduler    │  │ etcd (state DB) │
+   │ Controller  │    │  Scheduler    │   │ etcd (state DB) │
    └───────┬─────┘    └───────┬──────┘   └─────────────────┘
            │                  │
            ▼                  ▼
