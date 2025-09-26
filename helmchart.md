@@ -29,7 +29,7 @@
            │                      │
            ▼                      ▼
       Running Pods        New Node → joins cluster
-
+```
 Step-by-Step Explanation of Each Component
 1. Git Repo / Helm Charts
 
